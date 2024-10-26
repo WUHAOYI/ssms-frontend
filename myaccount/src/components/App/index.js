@@ -69,6 +69,7 @@ class App extends React.Component {
             <li>
               <a href={routeToMicroservice('www', '/logout/')}>
                 <SSMSButton
+                  style={{ position: 'absolute', top: '10', left: '10' }}
                   size="small"
                   buttonType="outline"
                 >
