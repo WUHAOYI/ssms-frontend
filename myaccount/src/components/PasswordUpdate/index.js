@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import classNames from 'classnames';
 import { Modal, notification } from 'antd';
 import SingleAttributeField from '../SingleAttributeField';
-import StaffjoyButton from '../StaffjoyButton';
+import SSMSButton from '../SSMSButton';
 import PasswordsMatch from './PasswordsMatch';
 import * as actions from '../../actions';
 
@@ -98,14 +98,14 @@ class PasswordUpdate extends React.Component {
           matching={this.state.confirmPassword}
         />
         {element}
-        <StaffjoyButton
+        <SSMSButton
           buttonType="primary"
           size="small"
           onClick={this.submitPassword}
           disabled={passwordButtonDisabled}
         >
           Save
-        </StaffjoyButton>
+        </SSMSButton>
 
         <Modal
           title="Confirm Save"

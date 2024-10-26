@@ -6,7 +6,7 @@ import { ScaleModal } from 'boron';
 import moment from 'moment';
 import 'moment-timezone';
 import classNames from 'classnames';
-import StaffjoyButton from 'components/StaffjoyButton';
+import SSMSButton from 'components/SSMSButton';
 import TimeSelector from 'components/TimeSelector';
 import { ModalLayoutSingleColumn } from 'components/ModalLayout';
 import {
@@ -246,15 +246,15 @@ class ShiftWeekTableCard extends React.Component {
         >
           <ModalLayoutSingleColumn
             buttons={[
-              <StaffjoyButton
+              <SSMSButton
                 buttonType="outline"
                 key="delete-button"
                 size="small"
                 onClick={this.deleteShiftButton}
               >
                 Delete
-              </StaffjoyButton>,
-              <StaffjoyButton
+              </SSMSButton>,
+              <SSMSButton
                 buttonType="primary"
                 size="small"
                 key="save-button"
@@ -262,7 +262,7 @@ class ShiftWeekTableCard extends React.Component {
                 disabled={disabledSave}
               >
                 Save
-              </StaffjoyButton>,
+              </SSMSButton>,
             ]}
           >
             <TimeSelector

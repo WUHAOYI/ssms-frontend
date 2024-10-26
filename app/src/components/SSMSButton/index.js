@@ -1,9 +1,9 @@
 import React, { PropTypes } from 'react';
 import classNames from 'classnames';
 
-require('./staffjoy-button.scss');
+require('./ssms-button.scss');
 
-function StaffjoyButton({
+function SSMSButton({
   children,
   onClick,
   active,
@@ -13,7 +13,7 @@ function StaffjoyButton({
   ...otherProps
 }) {
   const classes = classNames({
-    'staffjoy-button': true,
+    'ssms-button': true,
     [size]: true,
     [buttonType]: true,
     [className]: true,
@@ -27,13 +27,14 @@ function StaffjoyButton({
   );
 }
 
-StaffjoyButton.propTypes = {
+SSMSButton.propTypes = {
   children: PropTypes.string.isRequired,
   className: PropTypes.string,
   size: PropTypes.string,
   buttonType: PropTypes.string,
   onClick: PropTypes.func,
   active: PropTypes.bool,
+  disabled: PropTypes.bool,
 };
 
-export default StaffjoyButton;
+export default SSMSButton;

@@ -2,7 +2,7 @@ import _ from 'lodash';
 import moment from 'moment';
 import $ from 'jquery';
 import React, { PropTypes } from 'react';
-import StaffjoyButton from 'components/StaffjoyButton';
+import SSMSButton from 'components/SSMSButton';
 import StaffjoyTextField from 'components/StaffjoyTextField';
 import {
   MOMENT_SHIFT_CARD_TIMES,
@@ -198,7 +198,7 @@ class TimeSelector extends React.Component {
         </div>
         <div className="selector-buttons">
           <div className="meridiem-buttons">
-            <StaffjoyButton
+            <SSMSButton
               size="tiny"
               buttonType="outline"
               active={meridiem === 'am'}
@@ -207,8 +207,8 @@ class TimeSelector extends React.Component {
               data-time-value="am"
             >
               AM
-            </StaffjoyButton>
-            <StaffjoyButton
+            </SSMSButton>
+            <SSMSButton
               size="tiny"
               buttonType="outline"
               active={meridiem === 'pm'}
@@ -217,7 +217,7 @@ class TimeSelector extends React.Component {
               data-time-value="pm"
             >
               PM
-            </StaffjoyButton>
+            </SSMSButton>
           </div>
           <ul className="hour-buttons wrap-list">
             {

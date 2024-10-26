@@ -5,7 +5,7 @@ import * as actions from 'actions';
 import * as constants from 'constants/constants';
 import LoadingScreen from 'components/LoadingScreen';
 import ConfirmationModal from 'components/ConfirmationModal';
-import StaffjoyButton from 'components/StaffjoyButton';
+import SSMSButton from 'components/SSMSButton';
 import SearchField from 'components/SearchField';
 import TeamJobs from './TeamJobs';
 
@@ -291,15 +291,15 @@ class Settings extends React.Component {
           content={'Shifts with this job will remain unchanged. Are you '
                   + 'sure you want to archive this job?'}
           buttons={[
-            <StaffjoyButton
+            <SSMSButton
               buttonType="outline"
               size="tiny"
               key="cancel-button"
               onClick={this.handleCancelModalClick}
             >
               Cancel
-            </StaffjoyButton>,
-            <StaffjoyButton
+            </SSMSButton>,
+            <SSMSButton
               buttonType="outline"
               size="tiny"
               key="yes-button"
@@ -307,7 +307,7 @@ class Settings extends React.Component {
               onClick={this.handleDeleteJobClick}
             >
               Yes
-            </StaffjoyButton>,
+            </SSMSButton>,
           ]}
         />
       </div>

@@ -6,7 +6,7 @@ import HTML5Backend from 'react-dnd-html5-backend';
 import $ from 'jquery';
 import * as actions from 'actions';
 import LoadingScreen from 'components/LoadingScreen';
-import StaffjoyButton from 'components/StaffjoyButton';
+import SSMSButton from 'components/SSMSButton';
 import SearchField from 'components/SearchField';
 import ShiftWeekTable from './ShiftWeekTable';
 import SchedulingDateController from './DateController';
@@ -94,13 +94,13 @@ class Scheduling extends React.Component {
             />
           </li>
           <li className="publish-week-btn control-unit-hidden-on-collapse">
-            <StaffjoyButton
+            <SSMSButton
               buttonType={publishButtonStyle}
               onClick={publishTeamShifts}
               disabled={isSaving}
             >
               {publishAction}
-            </StaffjoyButton>
+            </SSMSButton>
           </li>
           <li className="create-shift-btn control-unit-hidden-on-collapse">
             <CreateShiftModal

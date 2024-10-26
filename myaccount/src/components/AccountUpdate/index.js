@@ -5,7 +5,7 @@ import classNames from 'classnames';
 import { Modal, notification } from 'antd';
 import * as actions from '../../actions';
 import SingleAttributeField from '../SingleAttributeField';
-import StaffjoyButton from '../StaffjoyButton';
+import SSMSButton from '../SSMSButton';
 
 class AccountUpdate extends React.Component {
   constructor(props) {
@@ -99,9 +99,9 @@ class AccountUpdate extends React.Component {
           onChange={this.changePhoneNumber}
         />
         {element}
-        <StaffjoyButton buttonType="primary" size="small" onClick={this.submit}>
+        <SSMSButton buttonType="primary" size="small" onClick={this.submit}>
           Save
-        </StaffjoyButton>
+        </SSMSButton>
 
         <Modal
           title="Confirm Save"

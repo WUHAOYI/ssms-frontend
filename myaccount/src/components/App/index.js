@@ -10,7 +10,7 @@ import AccountUpdate from '../AccountUpdate';
 import PasswordUpdate from '../PasswordUpdate';
 import NotificationManager from '../NotificationManager';
 import StatsPanel from '../StatsPanel';
-import StaffjoyButton from '../StaffjoyButton';
+import SSMSButton from '../SSMSButton';
 import Intercom from '../Intercom';
 import { routeToMicroservice } from '../../utility';
 
@@ -47,12 +47,12 @@ class App extends React.Component {
       appButton = (
         <li>
           <a href={routeToMicroservice('app')}>
-            <StaffjoyButton
+            <SSMSButton
               size="small"
               buttonType="primary"
             >
               Go to App
-            </StaffjoyButton>
+            </SSMSButton>
           </a>
         </li>
       );
@@ -68,12 +68,12 @@ class App extends React.Component {
             {appButton}
             <li>
               <a href={routeToMicroservice('www', '/logout/')}>
-                <StaffjoyButton
+                <SSMSButton
                   size="small"
                   buttonType="outline"
                 >
                   Logout
-                </StaffjoyButton>
+                </SSMSButton>
               </a>
             </li>
           </ul>

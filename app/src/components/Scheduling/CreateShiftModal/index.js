@@ -6,7 +6,7 @@ import TimeSelector from 'components/TimeSelector';
 import ShiftModalDaySelector from 'components/Scheduling/ShiftModalDaySelector';
 import { ModalLayoutRightSideColumn } from 'components/ModalLayout';
 import SelectableModalList from 'components/ModalLayout/SelectableList';
-import StaffjoyButton from 'components/StaffjoyButton';
+import SSMSButton from 'components/SSMSButton';
 import { MOMENT_SHIFT_CARD_TIMES } from 'constants/config';
 import { UNASSIGNED_SHIFTS } from 'constants/constants';
 
@@ -113,12 +113,12 @@ class CreateShiftModal extends React.Component {
 
       case 'button':
         launchContainer = (
-          <StaffjoyButton
+          <SSMSButton
             {...containerProps}
             onClick={this.openModal}
           >
             Create Shift
-          </StaffjoyButton>
+          </SSMSButton>
         );
         break;
 
@@ -161,15 +161,15 @@ class CreateShiftModal extends React.Component {
             panelTitle="Select Employee(s)"
             panelContent={selectableList}
             buttons={[
-              <StaffjoyButton
+              <SSMSButton
                 buttonType="outline"
                 size="small"
                 key="cancel-button"
                 onClick={this.closeModal}
               >
                 Cancel
-              </StaffjoyButton>,
-              <StaffjoyButton
+              </SSMSButton>,
+              <SSMSButton
                 buttonType="primary"
                 size="small"
                 key="create-button"
@@ -177,7 +177,7 @@ class CreateShiftModal extends React.Component {
                 disabled={disabledSave}
               >
                 Save
-              </StaffjoyButton>,
+              </SSMSButton>,
             ]}
           >
             <TimeSelector

@@ -9,7 +9,7 @@ import * as actions from '../../../actions';
 import createEmployee from '../../../validators/create-employee';
 import { ModalLayoutRightSideColumn } from '../../ModalLayout';
 import SelectableModalList from '../../ModalLayout/SelectableList';
-import StaffjoyButton from '../../StaffjoyButton';
+import SSMSButton from '../../SSMSButton';
 import StaffjoyTextField from '../../StaffjoyTextField';
 
 require('./create-employee-modal.scss');
@@ -136,14 +136,14 @@ class CreateEmployeeModal extends React.Component {
     );
 
     const cancelButton = (
-      <StaffjoyButton
+      <SSMSButton
         key="cancel"
         buttonType="neutral"
         disabled={submitting}
         onClick={this.closeModal}
       >
         Cancel
-      </StaffjoyButton>
+      </SSMSButton>
     );
 
     let progressBar;
@@ -152,13 +152,13 @@ class CreateEmployeeModal extends React.Component {
     }
 
     const createButton = (
-      <StaffjoyButton
+      <SSMSButton
         key="create"
         disabled={submitting}
         onClick={this.submit}
       >
         Create
-      </StaffjoyButton>
+      </SSMSButton>
     );
 
     const content = (
@@ -211,13 +211,13 @@ class CreateEmployeeModal extends React.Component {
             </ModalLayoutRightSideColumn>
           </div>
         </ScaleModal>
-        <StaffjoyButton
+        <SSMSButton
           buttonType="primary"
           size="small"
           onClick={this.openModal}
         >
           Create Employee
-        </StaffjoyButton>
+        </SSMSButton>
       </div>
     );
   }
