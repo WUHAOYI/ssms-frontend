@@ -1,6 +1,7 @@
 import _ from 'lodash';
 import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
+import 'antd/dist/antd.css';
 
 import * as actions from '../../actions';
 import LoadingScreen from '../LoadingScreen';
@@ -12,6 +13,7 @@ import StatsPanel from '../StatsPanel';
 import StaffjoyButton from '../StaffjoyButton';
 import Intercom from '../Intercom';
 import { routeToMicroservice } from '../../utility';
+
 
 class App extends React.Component {
 

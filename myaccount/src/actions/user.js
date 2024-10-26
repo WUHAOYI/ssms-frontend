@@ -135,7 +135,7 @@ function updateUser(userId, data) {
   return (dispatch, getState) => {
     const userData = getState().user.data;
     const originalEmail = userData.email;
-    let successMessage = 'Success!';
+    let successMessage = '';
 
     if (data.email !== originalEmail) {
       successMessage += ' Check your email for a confirmation link.';

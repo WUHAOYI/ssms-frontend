@@ -29,11 +29,17 @@ module.exports = {
                 test: /\.jsx?/,
                 exclude: /node_modules/,
                 include: path.join(__dirname, 'src'),
-                loader: "react-hot!babel"
+                // loader: "react-hot!babel"
+                loaders: ["react-hot", "babel"]
             },
             {
                 test: /\.scss$/,
                 loaders: ["style", "css", "sass"]
+            },
+            {
+                test: /\.css$/,
+                // use: ['style-loader', 'css-loader'],
+                loaders: ['style-loader', 'css-loader']
             },
             {
                 test: /\.(jpg|png)$/,
