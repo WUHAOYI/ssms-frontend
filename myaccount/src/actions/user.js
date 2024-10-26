@@ -57,7 +57,7 @@ function updatePassword(userId, password) {
       .then(() => {
         dispatch(setFormResponse('passwordUpdate', {
           type: 'success',
-          message: 'Password updated!',
+          message: '',
         }));
         return dispatch(updatedPassword());
       })

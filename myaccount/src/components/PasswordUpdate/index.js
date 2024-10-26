@@ -2,7 +2,7 @@ import _ from 'lodash';
 import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
 import classNames from 'classnames';
-
+import { Modal, notification } from 'antd';
 import SingleAttributeField from '../SingleAttributeField';
 import StaffjoyButton from '../StaffjoyButton';
 import PasswordsMatch from './PasswordsMatch';
@@ -14,10 +14,12 @@ class PasswordUpdate extends React.Component {
     this.state = {
       newPassword: '',
       confirmPassword: '',
+      showModal: false,
     };
     this.changeNewPassword = this.changeNewPassword.bind(this);
     this.changeConfirmPassword = this.changeConfirmPassword.bind(this);
     this.submitPassword = this.submitPassword.bind(this);
+    this.confirmSave = this.confirmSave.bind(this);
   }
 
   changeNewPassword(e) {
@@ -29,27 +31,41 @@ class PasswordUpdate extends React.Component {
   }
 
   submitPassword() {
-    // UI will not allow action without
+    this.setState({ showModal: true });
+  }
+
+  confirmSave() {
+    // UI will not allow action without password matching
     if (this.state.newPassword === this.state.confirmPassword) {
       this.props.dispatch(
-        actions.changePassword(
-          this.state.newPassword
-        )
-      );
+        actions.changePassword(this.state.newPassword)
+      ).then((res) => {
+        if (res.data !== undefined && res.data.type === 'danger') {
+          notification.error({
+            message: 'Save Failed',
+            description: 'Unable to save changes.',
+            duration: 2,
+          });
+        } else {
+          notification.success({
+            message: 'Save Successful',
+            description: 'Your password has been updated successfully!',
+            duration: 1,
+          });
+        }
+        this.setState({ showModal: false });
+        this.setState({
+          newPassword: '',
+          confirmPassword: '',
+        });
+      });
     }
-
-    // always clear form after submit
-    this.setState({
-      newPassword: '',
-      confirmPassword: '',
-    });
   }
 
   render() {
     const { formData } = this.props;
     const { newPassword, confirmPassword } = this.state;
-    const passwordButtonDisabled = _.isEmpty(confirmPassword) ||
-      (newPassword !== confirmPassword);
+    const passwordButtonDisabled = _.isEmpty(confirmPassword) || (newPassword !== confirmPassword);
     let element = null;
 
     if (!_.isEmpty(formData)) {
@@ -90,6 +106,15 @@ class PasswordUpdate extends React.Component {
         >
           Save
         </StaffjoyButton>
+
+        <Modal
+          title="Confirm Save"
+          visible={this.state.showModal}
+          onOk={this.confirmSave}
+          onCancel={() => this.setState({ showModal: false })}
+        >
+          <p>Are you sure you want to save the changes?</p>
+        </Modal>
       </div>
     );
   }
