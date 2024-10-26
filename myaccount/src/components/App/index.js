@@ -60,6 +60,7 @@ class App extends React.Component {
 
     return (
       <div className="mdl-grid" id="myaccount">
+        {/* left side: personal info*/}
         <div className="mdl-cell mdl-cell--4-col">
           <ProfilePhoto photoUrl={userData.photoUrl} />
           <StatsPanel memberSince={userData.memberSince} />
@@ -77,6 +78,7 @@ class App extends React.Component {
             </li>
           </ul>
         </div>
+        {/* middle: update account info and password info */}
         <div className="mdl-cell mdl-cell--4-col">
           <AccountUpdate
             name={userData.name}
@@ -86,6 +88,7 @@ class App extends React.Component {
           />
           <PasswordUpdate formData={formData.passwordUpdate} />
         </div>
+        {/* right side: notification manager */}
         <div className="mdl-cell mdl-cell--4-col">
           <NotificationManager
             enableEmailNotifications

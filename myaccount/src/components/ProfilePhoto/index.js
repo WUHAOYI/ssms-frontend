@@ -13,23 +13,6 @@ function ProfilePhoto({ photoUrl }) {
       />
     </div>
   );
-
-  /*
-    TODO add back in when app supports custom photo
-      <input
-        type="file"
-        name="photo-upload"
-        id="photo-upload"
-        onChange={changePhoto}
-        className="inputfile"
-      />
-      <label
-        htmlFor="photo-upload"
-        className="mdl-button mdl-js-button change-photo-button"
-      >
-        Change Photo
-      </label>
-    */
 }
 
 function mapDispatchToProps(dispatch) {
@@ -43,7 +26,6 @@ function mapDispatchToProps(dispatch) {
 
 ProfilePhoto.propTypes = {
   photoUrl: PropTypes.string.isRequired,
-  // changePhoto: PropTypes.func.isRequired,
 };
 
 export default connect(null, mapDispatchToProps)(ProfilePhoto);

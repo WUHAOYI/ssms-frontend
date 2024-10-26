@@ -1,5 +1,5 @@
 @import "../../third_party/node/material_design_lite/material-design-lite.scss";
-@import "../../resources/scss/staffjoy.scss";
+@import "../../resources/scss/ssms.scss";
 
 #myaccount {
   padding-top: 50px;
@@ -53,6 +53,8 @@
   }
 
   .stats-panel {
+    display: flex;
+    justify-content: center;
     max-width: 300px;
     min-width: 250px;
     margin: 30px auto 0;
@@ -67,7 +69,6 @@
 
         &.label {
           font-weight: 700;
-          margin-right: 12px;
         }
       }
     }
