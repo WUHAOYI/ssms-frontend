@@ -8,7 +8,8 @@
     "max-len": [1, 80, 2, {"ignoreComments": true}],
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "react/forbid-prop-types": "off",
-    "import/prefer-default-export": "off"
+    "import/prefer-default-export": "off",
+    "linebreak-style": ["error", "windows"]
   },
   "globals": {
     "document": true,

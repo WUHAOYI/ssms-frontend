@@ -19,7 +19,8 @@
             "png": "always",
             "gif": "always"
         }
-    ]
+    ],
+    "linebreak-style": ["error", "windows"]
     },
     "globals": {
         "localStorage": true,

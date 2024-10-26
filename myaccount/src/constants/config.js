@@ -13,9 +13,9 @@ export const SENTRY_UAT_KEY = 'https://6d2bfa8c878d4905b2537647032f61c8@sentry.i
 // apex for the various staffjoy environments
 export const HTTP_PREFIX = 'http://';
 export const HTTPS_PREFIX = 'https://';
-export const DEVELOPMENT_APEX = '.staffjoy-v2.local';
-export const UAT_APEX = '.staffjoy-uat.local';
-export const PRODUCTION_APEX = '.staffjoy.com';
+export const DEVELOPMENT_APEX = '.ssms-v2.local';
+export const UAT_APEX = '.ssms-uat.local';
+export const PRODUCTION_APEX = '.ssms.com';
 
 const DEFAULT_REFETCH_INTERVAL = 10;
 
