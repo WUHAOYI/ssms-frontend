@@ -43,11 +43,13 @@ class App extends React.Component {
 
     let appButton = null;
 
+    console.log('companies: ', companies);
     if (companies.length > 0) {
       appButton = (
         <li>
           <a href={routeToMicroservice('app')}>
             <SSMSButton
+              style={{ position: 'absolute', top: '10', left: '10' }}
               size="small"
               buttonType="primary"
             >
@@ -69,7 +71,7 @@ class App extends React.Component {
             <li>
               <a href={routeToMicroservice('www', '/logout/')}>
                 <SSMSButton
-                  style={{ position: 'absolute', top: '10', left: '10' }}
+                  style={{ position: 'fixed', bottom: '10', left: '10' }}
                   size="small"
                   buttonType="outline"
                 >
@@ -109,13 +111,15 @@ class App extends React.Component {
 }
 
 function mapStateToProps(state) {
+  console.log('state: ', state);
   const userState = state.user;
   const whoAmIState = state.whoami;
   const userData = userState.data;
   const formData = state.forms;
   const intercomSettings = state.whoami.intercomSettings;
 
-  const admin = _.get(whoAmIState.data, 'admin', {});
+  const admin = _.get(whoAmIState.data, 'adminOfList', {});
+  console.log('admin: ', admin);
   const companies = _.get(admin, 'companies') || [];
 
   return {

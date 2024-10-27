@@ -8,7 +8,7 @@ function NotificationManager() {
   return (
     <div className="notifications">
       <h2>Notifications</h2>
-      <p>Staffjoy sends notifications over email and text message.</p>
+      <p>SSMS sends notifications over email. <br /> Please check your mailbox.</p>
     </div>
   );
 
