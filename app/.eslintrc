@@ -20,7 +20,7 @@
             "gif": "always"
         }
     ],
-    "linebreak-style": ["error", "windows","unix"]
+    "linebreak-style": ["error","unix"]
     },
     "globals": {
         "localStorage": true,
