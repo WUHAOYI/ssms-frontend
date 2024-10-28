@@ -51,7 +51,7 @@ export default class TeamJobs extends React.Component {
     } = this.props;
 
     return (
-      <table className="mdl-data-table mdl-js-data-table staffjoy-table">
+      <table className="mdl-data-table mdl-js-data-table ssms-table">
         <TableHeader />
         <tbody>
           {_.map(this.getQueriedJobs(), (job) => {

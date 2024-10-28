@@ -76,7 +76,7 @@ module.exports = {
             inject: "body",
         }),
         new FaviconsWebpackPlugin({
-            logo: './staffjoy-favicon.png',
+            logo: './ssms-favicon.png',
             prefix: 'assets/icons/',
             emitStats: false,
             // Inject the html into the html-webpack-plugin
@@ -84,7 +84,7 @@ module.exports = {
             // favicon background color
             background: '#fff',
             // favicon app title
-            title: 'Staffjoy | App',
+            title: 'SSMS | App',
 
             // which icons should be generated
             icons: {

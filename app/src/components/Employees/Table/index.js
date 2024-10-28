@@ -8,7 +8,7 @@ require('./table.scss');
 function Table({ columns, onRowClick, rows, idKeyName }) {
   // iterate through rows and create a row object
   return (
-    <table className="mdl-data-table mdl-js-data-table staffjoy-table">
+    <table className="mdl-data-table mdl-js-data-table ssms-table">
       <TableHeader columns={columns} />
       <tbody>
         {

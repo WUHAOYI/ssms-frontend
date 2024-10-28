@@ -19,7 +19,7 @@ function ModalLayoutSingleColumn({ children, buttons }) {
   }
 
   return (
-    <div className="staffjoy-modal-layout single-column">
+    <div className="ssms-modal-layout single-column">
       <div className="modal-content">
         {children}
       </div>

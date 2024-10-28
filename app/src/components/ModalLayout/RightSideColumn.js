@@ -35,7 +35,7 @@ function ModalLayoutRightSideColumn({
   }
 
   return (
-    <div className="staffjoy-modal-layout right-side-column">
+    <div className="ssms-modal-layout right-side-column">
       <div className="modal-side-panel">
         {panelTitleElement}
         <div className="scrolling-panel">

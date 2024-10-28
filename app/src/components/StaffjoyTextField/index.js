@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react';
 import { Textfield } from 'react-mdl';
 import classNames from 'classnames';
 
-require('./staffjoy-text-field.scss');
+require('./ssms-text-field.scss');
 
 function StaffjoyTextField({ isFocused, width, ...otherProps }) {
   const classes = classNames({
@@ -21,7 +21,7 @@ function StaffjoyTextField({ isFocused, width, ...otherProps }) {
 
   return (
     <Textfield
-      className="staffjoy-text-field"
+      className="ssms-text-field"
       floatingLabel
       inputClassName={classes}
       style={{ width: fieldWidth }}

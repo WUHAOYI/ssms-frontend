@@ -1,6 +1,6 @@
 @import "../../../../resources/scss/colors";
 
-.staffjoy-modal-layout {
+.ssms-modal-layout {
   &.single-column {
     padding-top: 24px;
     padding-bottom: 24px;
@@ -30,7 +30,7 @@
         .modal-title {
           font-weight: 300;
           font-size: 20px;
-          color: $staffjoy-palette-logo-grey;
+          color: $ssms-palette-logo-grey;
           text-align: center;
           margin-top: 0;
           margin-bottom: 4px;
@@ -50,7 +50,7 @@
       padding-top: 24px;
       padding-bottom: 12px;
       position: absolute;
-      background-color: $staffjoy-palette-primary;
+      background-color: $ssms-palette-primary;
       top: 0;
       bottom: 0;
       right: 0;

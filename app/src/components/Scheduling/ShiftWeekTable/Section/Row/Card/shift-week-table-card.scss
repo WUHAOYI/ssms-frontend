@@ -32,18 +32,18 @@
 
   .card-label {
     font-size: 8px;
-    color: $staffjoy-status-neutral-standard;
+    color: $ssms-status-neutral-standard;
     margin-bottom: -6px;
   }
 
   .card-time {
     font-size: 12px;
-    color: $staffjoy-palette-logo-grey;
+    color: $ssms-palette-logo-grey;
   }
 
   .duration {
     float: right;
-    color: $staffjoy-palette-logo-grey;
+    color: $ssms-palette-logo-grey;
     font-size: 8px;
   }
 
@@ -60,7 +60,7 @@
     &.z-axis-expanded {
       background-color: $pure-white;
       box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.25);
-      color: $staffjoy-palette-logo-grey;
+      color: $ssms-palette-logo-grey;
     }
 
     .z-axis-picker-wrapper {
@@ -93,7 +93,7 @@
             padding-left: 5px;
 
             &.add-job {
-              color: $staffjoy-palette-primary;
+              color: $ssms-palette-primary;
             }
 
             &:hover {
@@ -133,7 +133,7 @@
     .job-label-none {
       font-style: italic;
       text-align: center;
-      color: $staffjoy-palette-logo-grey;
+      color: $ssms-palette-logo-grey;
     }
   }
 }

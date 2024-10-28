@@ -7,7 +7,7 @@ import {
   ENV_NAME_PRODUCTION,
 } from './config';
 
-// apex for the various staffjoy environments
+// apex for the various ssms environments
 export const DEVELOPMENT_APEX = '.ssms-v2.local';
 export const UAT_APEX = '.ssms-uat.local';
 export const PRODUCTION_APEX = '.ssms.com';

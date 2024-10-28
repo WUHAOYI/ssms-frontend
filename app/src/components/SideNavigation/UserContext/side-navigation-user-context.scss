@@ -6,7 +6,7 @@
   padding: 15px 0 15px 10px;
 
   &:hover {
-    background-color: $staffjoy-bg-light-active-hover;
+    background-color: $ssms-bg-light-active-hover;
   }
 
   .profile-icon {
@@ -22,7 +22,7 @@
 
     .user-name {
       font-size: 16px;
-      color: $staffjoy-palette-primary;
+      color: $ssms-palette-primary;
     }
 
     .company-name {
@@ -40,13 +40,13 @@
       text-transform: uppercase;
       text-decoration: none;
       font-size: 13px;
-      color: $staffjoy-palette-logo-grey;
+      color: $ssms-palette-logo-grey;
 
       &.active {
-        background-color: $staffjoy-bg-light-active;
+        background-color: $ssms-bg-light-active;
 
         &:hover {
-          background-color: $staffjoy-bg-light-active-hover;
+          background-color: $ssms-bg-light-active-hover;
         }
       }
 

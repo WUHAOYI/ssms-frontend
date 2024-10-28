@@ -5,16 +5,16 @@
   width: 100%;
   border-radius: 2px;
   cursor: pointer;
-  background-color: $staffjoy-logo-grey-alpha-10;
+  background-color: $ssms-logo-grey-alpha-10;
 
   &.isHovering {
-    background: url(./plus-icon.svg) $staffjoy-bg-light-active;
+    background: url(./plus-icon.svg) $ssms-bg-light-active;
     background-size: 36px 36px;
     background-repeat: no-repeat;
     background-position: center;
   }
 
   &.card-is-over {
-    background-color: $staffjoy-bg-light-active-hover;
+    background-color: $ssms-bg-light-active-hover;
   }
 }

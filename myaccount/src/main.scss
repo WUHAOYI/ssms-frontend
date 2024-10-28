@@ -36,7 +36,7 @@
       margin: 30px auto 0;
       width: 168px;
       display: block;
-      color: $staffjoy-palette-primary;
+      color: $ssms-palette-primary;
       font-weight: 600;
       border: 1px solid $light-grey;
       border-radius: 4px;
@@ -80,7 +80,7 @@
 
     .password-compare {
       &.danger {
-        color: $staffjoy-status-error-standard;
+        color: $ssms-status-error-standard;
         font-size: 12px;
         font-weight: 600;
         margin-top: -15px;
@@ -113,11 +113,11 @@
     margin-top: -5px;
 
     &.success {
-      color: $staffjoy-status-success-standard;
+      color: $ssms-status-success-standard;
     }
 
     &.danger {
-      color: $staffjoy-status-error-standard;
+      color: $ssms-status-error-standard;
     }
   }
 }

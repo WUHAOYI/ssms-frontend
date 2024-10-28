@@ -5,7 +5,7 @@
   border-radius: 2px;
   border-color: transparent;
   text-transform: uppercase;
-  font-family: $staffjoy-font;
+  font-family: $ssms-font;
   font-weight: 600;
   font-size: 16px;
   line-height: 1;
@@ -44,7 +44,7 @@
   }
 
   &.primary {
-    background-color: $staffjoy-palette-primary;
+    background-color: $ssms-palette-primary;
     box-shadow: $button-shadow-standard;
     color: $pure-white;
 
@@ -64,7 +64,7 @@
   }
 
   &.accent {
-    background-color: $staffjoy-palette-accent;
+    background-color: $ssms-palette-accent;
     box-shadow: $button-shadow-standard;
     color: $pure-white;
 
@@ -84,9 +84,9 @@
   }
 
   &.neutral {
-    background-color: $staffjoy-palette-white;
+    background-color: $ssms-palette-white;
     box-shadow: $button-shadow-standard;
-    color: $staffjoy-palette-logo-grey;
+    color: $ssms-palette-logo-grey;
 
     &:hover {
       background-color: $neutral-button-pressed-hover;
@@ -124,38 +124,38 @@
 
   &.outline-error {
     background-color: inherit;
-    border-color: $staffjoy-status-error-standard;
-    color: $staffjoy-status-error-standard;
+    border-color: $ssms-status-error-standard;
+    color: $ssms-status-error-standard;
     border-style: solid;
 
     &:hover {
-      background-color: $staffjoy-status-error-light;
-      border-color: $staffjoy-status-error-light;
+      background-color: $ssms-status-error-light;
+      border-color: $ssms-status-error-light;
       color: $pure-white;
     }
 
     &:active, &.active {
-      background-color: $staffjoy-status-error-standard;
-      border-color: $staffjoy-status-error-standard;
+      background-color: $ssms-status-error-standard;
+      border-color: $ssms-status-error-standard;
       color: $pure-white;
     }
   }
 
   &.outline-success {
     background-color: inherit;
-    border-color: $staffjoy-status-success-standard;
-    color: $staffjoy-status-success-standard;
+    border-color: $ssms-status-success-standard;
+    color: $ssms-status-success-standard;
     border-style: solid;
 
     &:hover {
-      background-color: $staffjoy-status-success-light;
-      border-color: $staffjoy-status-success-light;
+      background-color: $ssms-status-success-light;
+      border-color: $ssms-status-success-light;
       color: $pure-white;
     }
 
     &:active, &.active {
-      background-color: $staffjoy-status-success-standard;
-      border-color: $staffjoy-status-success-standard;
+      background-color: $ssms-status-success-standard;
+      border-color: $ssms-status-success-standard;
       color: $pure-white;
     }
   }
